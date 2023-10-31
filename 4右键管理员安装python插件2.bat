@@ -1,0 +1,1 @@
+python ./selenium/setup.py install
