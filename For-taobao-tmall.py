@@ -15,12 +15,6 @@ from os import path
 
 
 
-#d = path.dirname(__file__)
-#abspath = path.abspath(d)
-#chromedriver = abspath + "\chromedriver.exe"
-#os.environ["webdriver.chrome.driver"] = chromedriver
-#driver = webdriver.Chrome(chromedriver)
-
 def on_message_callback(client, userdata, message):
  
     print(message.topic+" " + ":" + str(message.payload))
@@ -122,8 +116,6 @@ if __name__ == "__main__":
     
     print ("设定时间=" + times)
    
-    # print("本机序列号1=" + mac)
-    # print("本机序列号2=" + board_id2)
     deadline = "2023-01-01 08:00:00.000000"
    
 
