@@ -30,11 +30,6 @@ def on_message_callback(client, userdata, message):
     buy(times)
 
 
-def on_connect(client, userdata, flags, rc):
-    print("Connected with result code " + str(rc))
-    client.subscribe("times")
-
-
 def login():
     driver.get("https://www.jd.com")
     time.sleep(5)
