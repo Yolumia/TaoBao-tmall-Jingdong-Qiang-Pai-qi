@@ -2,14 +2,12 @@
 # -*- coding: utf-8 -*-
 import os
 import socket
-import paho.mqtt.client as mqtt
 import wmi
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import datetime
 import time
 import ntplib
-import base64
 import clipboard
 from os import path
 
