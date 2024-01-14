@@ -32,22 +32,6 @@ def on_connect(client, userdata, flags, rc):
     print("Connected with result code "+str(rc))
     client.subscribe("times")
  
-def link():
-    client = mqtt.Client('601305005')
-    client.connect("183.230.40.39", 6002, 60)
-    client.username_pw_set('332255', 'qpq023')
-    client.on_connect = on_connect
-    mac= ""+get_mac_address()
-    client.publish("times", mac, 1)
-    # client.subscribe('times')
-    client.on_message = on_message_callback
-    client.loop_forever()
-
-def get_mac_address():
-    import uuid
-    node = uuid.getnode()
-    mac = uuid.UUID(int = node).hex[-12:]
-    return mac
 
 def login():
     #driver.get("https://www.taobao.com")
